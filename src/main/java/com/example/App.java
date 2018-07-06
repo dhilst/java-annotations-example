@@ -12,7 +12,7 @@ public class App {
         for (Method m: annotated.getDeclaredMethods()) {
            if (!m.isAnnotationPresent(Greetings.class)) 
                continue;
-		   Annotation a = m.getAnnotation(Greetings.class);
+           Annotation a = m.getAnnotation(Greetings.class);
            Greetings g = (Greetings) a;
            System.out.println("Greetings: " + g.message());
         }
